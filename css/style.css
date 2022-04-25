@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Caveat', cursive;
+    background-image: linear-gradient(
+    45deg,
+  hsl(240deg 31% 46%) 5%,
+  hsl(320deg 50% 55%) 85%,
+  hsl(356deg 100% 71%) 95%,
+  hsl(38deg 100% 59%) 99%,
+  hsl(51deg 100% 50%) 101%,
+  hsl(39deg 100% 48%) 102%,
+  hsl(26deg 87% 48%) 102%,
+  hsl(8deg 71% 45%) 102%,
+  hsl(339deg 89% 39%) 101%,
+  hsl(321deg 68% 39%) 101%,
+  hsl(276deg 42% 44%) 101%,
+  hsl(213deg 86% 37%) 100%
+);
+    width: 100%;
+    height: 100vh;
+}
+
+a {
+    display: inline-block;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3rem;
+    display: block;
+    padding: 20px;
+    color: #fafafa;
+    letter-spacing: 5px;
+    text-shadow: -1px -1px 2px #715870, 1px 1px 2px #c499dd;
+}
+
+.main {
+    border-radius: 15px;
+    background: rgba(255, 245, 215, 0.1);
+    width: 500px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.div-audio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    background: rgba(255, 245, 215, 0.1);
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.div-audio audio {
+    margin: 10px auto;
+}
+
+.timer {
+    min-height: 40px;
+    color: white;
+}
+
+button {
+    border: none;
+    outline: none;
+    margin: 5px 10px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button.record {
+    width: 150px;
+    height: 40px;
+    color: #ffffff;
+    border-radius: 15px;
+    background: rgba(255, 245, 215, 0.1);
+}
+
+button.stop {
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    color: #ffffff;
+    background: rgba(255, 245, 215, 0.1);
+}
+
+audio {
+    outline: none;
+    opacity: 1;
+    transition: opacity 3s ease-in-out;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: #86529C;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #3a2247;
+    color: #ffffff;
+}
+
+audio::-webkit-media-controls-overlay-enclosure {
+    display: none;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: #ffffff;
+}
+
+img.reset {
+    display: block;
+    margin: 15px auto;
+}
+
+.div-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scale {
+    animation: scale 3s linear infinite;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
